@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600;900&display=swap");
+* {
+  font-family: "Cairo", sans-serif;
+  outline: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+.form,
+.tasks{
+  background-color: rgb(236, 236, 236) !important;
+  padding: 20px !important;
+  width: 70%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#inputTaskName {
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  flex: 1;
+}
+
+.form,
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+.task:hover {
+  transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
+}
+
+.done {
+  text-decoration:line-through;
+  opacity: 0.6;
+}
+
+#addTaskBtn,
+#delTaskBtn,#doneBtn {
+  background-color: rgba(255, 66, 66, 0.888);
+  color: #fff;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  cursor: pointer;
+}
+
+#delTaskBtn,#doneBtn  {
+  padding: 0 10px;
+  margin: 0 4px;
+}
+
